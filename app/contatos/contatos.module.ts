@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ContatoBuscaComponent } from './contato-busca.component';
 import { ContatoDetalheComponent } from './contato-detalhe.component';
 import { ContatosListaComponent } from './contatos-lista.component';
 import { ContatoRoutingModule } from './contato-routing.module'
@@ -14,10 +15,12 @@ import { DialogService } from '../dialog-service';
         FormsModule
     ],
     declarations:[
+        ContatoBuscaComponent,
         ContatoDetalheComponent,
         ContatosListaComponent
     ],
     exports:[
+        ContatoBuscaComponent,
         ContatosListaComponent
     ],
     providers:[
